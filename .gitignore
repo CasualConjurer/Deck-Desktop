@@ -1,0 +1,11 @@
+
+
+/*
+
+!.gitignore
+!README.md
+!superfile
+superfile/theme/*
+!nvim
+!mango
+mango/noctalia.conf
