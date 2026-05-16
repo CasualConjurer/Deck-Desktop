@@ -67,6 +67,9 @@ vim.lsp.enable({
 	"cssls",
 	"fish_lsp",
 	"markdown_oxide",
+    "dockerls",
+    "docker_language_server",
+    "docker_compose_language_service",
   --- ... etc
 })
 
