@@ -55,6 +55,7 @@ local ts_server = vim.g.lsp_typescript_server or "vtsls"
 -- Enable LSP servers for Neovim 0.11+
 vim.lsp.enable({
 	ts_server,
+    "ts_ls",
 	"lua_ls",
 	"gopls",
 	"rust_analyzer",
