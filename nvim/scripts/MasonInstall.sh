@@ -7,6 +7,7 @@ nvim --headless -c "MasonInstall \
   html-lsp \
   htmlbeautifier \
   htmlhint \
+  emmet-language-server \
   superhtml \
   css-lsp \
   css-variables-language-server \
