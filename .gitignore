@@ -11,6 +11,7 @@ superfile/theme/*
 mango/noctalia.conf
 !menus
 menus/applications-merged/
+!noctalia
 
 .bak
 *.bak*
