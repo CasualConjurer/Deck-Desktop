@@ -9,3 +9,9 @@ superfile/theme/*
 !nvim
 !mango
 mango/noctalia.conf
+!menus
+menus/applications-merged/
+!noctalia
+
+.bak
+*.bak*

@@ -5,11 +5,13 @@ local opt = vim.opt
 opt.number = true -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true -- Highlight current line
-opt.wrap = false -- Don't wrap lines
 opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
 
+-- Wrapping
+opt.wrap = true -- Wrap lines
+opt.showbreak = "> " -- Add indent char to wrapped lines
 
 -- Indentation
 opt.tabstop = 4 -- Tab width
@@ -45,7 +47,7 @@ opt.synmaxcol = 300 -- Syntax highlighting limit
 opt.ruler = false -- Disable the default ruler
 opt.virtualedit = "block" -- Allow cursor to move where there is no text in visual block mode
 opt.winminwidth = 5 -- Minimum window width
-
+-- opt.guicursor = "n-v-c:ver50,i-ci-ve:ver25-blinkon500-blinkoff500,r-cr:hor20,o:hor50"
 
 -- File handling
 opt.backup = false -- Don't create backup files
