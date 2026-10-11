@@ -6,6 +6,7 @@ An alternate custom configurated desktop environment for the Steam Deck built wi
 
 ### Important Notes
 - This installation is for the CachyOS Handheld Edition, meaning there are no immutable drives present, and mostly everything is configurable
+- DO NOT `git clone` into the `$HOME` directory unless you know what you are doing. Copy the files in their respective folders. (I will provide a Script in the future to automate this process) 
 
 ---
 

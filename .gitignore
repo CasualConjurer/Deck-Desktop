@@ -1,17 +1,50 @@
-
-
+# Initial Ignores
 /*
-
 !.gitignore
 !README.md
-!superfile
-superfile/theme/*
-!nvim
-!mango
-mango/noctalia.conf
-!menus
-menus/applications-merged/
-!noctalia
 
-.bak
-*.bak*
+# Initial .config Setup
+!.config/
+.config/*
+
+# Fish
+!.config/fish/
+.config/fish/*
+!.config/fish/config.fish
+
+!.config/fish/functions/
+.config/fish/functions/*
+!.config/fish/functions/spf.fish
+
+# Superfile
+!.config/superfile/
+.config/superfile/theme/*
+
+# Neovim
+!.config/nvim/
+.config/nvim/.luarc.json
+.config/nvim/nvim-pack-lock.json
+
+# MangoWM
+!.config/mango/
+.config/mango/noctalia.conf
+
+# Menus
+!.config/menus/
+.config/menus/applications-merged/
+
+# Noctalia
+!.config/noctalia/
+!Pictures/
+Pictures/*
+!Pictures/icon.md
+
+# FastFetch
+!.config/fastfetch/
+.config/fastfetch/*
+!.config/fastfetch/config.jsonc
+
+# NPM
+!.npmrc
+
+

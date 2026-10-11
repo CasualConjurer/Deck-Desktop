@@ -65,7 +65,7 @@ vim.lsp.enable({
 	"jsonnet_ls",
 	"bashls",
 	"clangd",
-	"emmet-language-server",
+	-- "emmet-language-server",
     "cssls",
 	"fish_lsp",
 	"markdown_oxide",
