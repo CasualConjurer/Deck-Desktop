@@ -1,0 +1,27 @@
+# Fastfetch
+.config/fastfetch/config.jsonc
+
+# Fish
+.config/fish/config.fish
+.config/fish/functions/spf.fish
+
+# Mango
+.config/mango/config.conf
+.config/mango/main/*
+
+# KDE Menus
+.config/menus/mango-applications.menu
+
+# Noctalia
+.config/noctalia/noctalia-full-config.toml
+
+# Neovim
+.config/nvim/lsp/*
+.config/nvim/lua/*
+.config/nvim/scripts/*
+.config/nvim/init.lua
+
+# SuperFile
+.config/superfile/*
+
+Pictures/*

@@ -1,13 +1,16 @@
 [accessibility]
 high_contrast = false
-ui_scale = 0.94999998807907104
+ui_scale = 1.0
 
 [audio]
+enable_notification_sounds = true
 enable_overdrive = false
+enable_power_sounds = true
+enable_screenshot_sounds = true
 enable_sounds = true
-notification_sound = ""
+enable_volume_sounds = true
+sound_theme = "freedesktop"
 sound_volume = 0.29999998211860657
-volume_change_sound = ""
 
 [backdrop]
 blur_intensity = 0.5
@@ -19,16 +22,19 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
 
     [bar.Deck-Bar-Left]
     auto_hide = false
+    auto_hide_delay_ms = 0
     background_opacity = 1.0
-    border = "outline"
+    border = "outline_variant"
     border_width = 0.0
     capsule = true
-    capsule_fill = "surface_variant"
+    capsule_border_width = 1.0
+    capsule_fill = "surface_container"
     capsule_group = []
     capsule_opacity = 1.0
     capsule_padding = 6.0
     capsule_thickness = 0.75999999046325684
     center = [ "workspaces" ]
+    compositor_blur = true
     concave_edge_corners = true
     contact_shadow = false
     enabled = false
@@ -53,25 +59,30 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
     scale = 1.2000000476837158
     shadow = false
     show_on_workspace_switch = true
+    show_tooltip = true
     smart_auto_hide = false
     start = [ "launcher", "clock" ]
     thickness = 39
     widget_spacing = 5
 
         [bar.Deck-Bar-Left.dead_zone]
+        click_through = false
 
         [bar.Deck-Bar-Left.monitor.eDP-1]
         auto_hide = false
+        auto_hide_delay_ms = 0
         background_opacity = 1.0
-        border = "outline"
+        border = "outline_variant"
         border_width = 0.0
         capsule = true
-        capsule_fill = "surface_variant"
+        capsule_border_width = 1.0
+        capsule_fill = "surface_container"
         capsule_group = []
         capsule_opacity = 1.0
         capsule_padding = 6.0
         capsule_thickness = 0.75999999046325684
         center = [ "workspaces" ]
+        compositor_blur = true
         concave_edge_corners = true
         contact_shadow = false
         enabled = true
@@ -96,25 +107,30 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
         scale = 1.2000000476837158
         shadow = false
         show_on_workspace_switch = true
+        show_tooltip = true
         smart_auto_hide = false
         start = [ "launcher", "clock" ]
         thickness = 39
         widget_spacing = 5
 
             [bar.Deck-Bar-Left.monitor.eDP-1.dead_zone]
+            click_through = false
 
     [bar.Deck-Bar-Right]
     auto_hide = false
+    auto_hide_delay_ms = 0
     background_opacity = 1.0
-    border = "outline"
+    border = "outline_variant"
     border_width = 0.0
     capsule = true
-    capsule_fill = "surface_variant"
+    capsule_border_width = 1.0
+    capsule_fill = "surface_container"
     capsule_group = []
     capsule_opacity = 1.0
     capsule_padding = 6.0
     capsule_thickness = 0.75999999046325684
     center = [ "media", "volume", "brightness" ]
+    compositor_blur = true
     concave_edge_corners = true
     contact_shadow = false
     enabled = false
@@ -139,25 +155,30 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
     scale = 1.2000000476837158
     shadow = true
     show_on_workspace_switch = true
+    show_tooltip = true
     smart_auto_hide = false
     start = [ "tray", "screenshot", "custom_button_2" ]
     thickness = 39
     widget_spacing = 6
 
         [bar.Deck-Bar-Right.dead_zone]
+        click_through = false
 
         [bar.Deck-Bar-Right.monitor.eDP-1]
         auto_hide = false
+        auto_hide_delay_ms = 0
         background_opacity = 1.0
-        border = "outline"
+        border = "outline_variant"
         border_width = 0.0
         capsule = true
-        capsule_fill = "surface_variant"
+        capsule_border_width = 1.0
+        capsule_fill = "surface_container"
         capsule_group = []
         capsule_opacity = 1.0
         capsule_padding = 6.0
         capsule_thickness = 0.75999999046325684
         center = [ "media", "volume", "brightness" ]
+        compositor_blur = true
         concave_edge_corners = true
         contact_shadow = false
         enabled = true
@@ -182,25 +203,30 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
         scale = 1.2000000476837158
         shadow = true
         show_on_workspace_switch = true
+        show_tooltip = true
         smart_auto_hide = false
         start = [ "tray", "screenshot", "custom_button_2" ]
         thickness = 39
         widget_spacing = 6
 
             [bar.Deck-Bar-Right.monitor.eDP-1.dead_zone]
+            click_through = false
 
     [bar.DeckBar]
     auto_hide = false
+    auto_hide_delay_ms = 0
     background_opacity = 1.0
-    border = "outline"
+    border = "outline_variant"
     border_width = 0.0
     capsule = true
-    capsule_fill = "surface_variant"
+    capsule_border_width = 1.0
+    capsule_fill = "surface_container"
     capsule_group = []
     capsule_opacity = 0.62999999523162842
     capsule_padding = 6.0
     capsule_thickness = 0.75999999046325684
     center = [ "clock" ]
+    compositor_blur = true
     concave_edge_corners = true
     contact_shadow = false
     enabled = false
@@ -236,25 +262,30 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
     scale = 0.94999998807907104
     shadow = true
     show_on_workspace_switch = true
+    show_tooltip = true
     smart_auto_hide = false
     start = [ "launcher", "wallpaper", "workspaces", "media" ]
     thickness = 34
     widget_spacing = 6
 
         [bar.DeckBar.dead_zone]
+        click_through = false
 
         [bar.DeckBar.monitor.DP-1]
         auto_hide = false
+        auto_hide_delay_ms = 0
         background_opacity = 1.0
-        border = "outline"
+        border = "outline_variant"
         border_width = 0.0
         capsule = true
-        capsule_fill = "surface_variant"
+        capsule_border_width = 1.0
+        capsule_fill = "surface_container"
         capsule_group = []
         capsule_opacity = 0.62999999523162842
         capsule_padding = 6.0
         capsule_thickness = 0.75999999046325684
         center = [ "clock" ]
+        compositor_blur = true
         concave_edge_corners = true
         contact_shadow = false
         enabled = true
@@ -290,30 +321,46 @@ order = [ "DeckBar", "Deck-Bar-Left", "Deck-Bar-Right" ]
         scale = 0.94999998807907104
         shadow = true
         show_on_workspace_switch = true
+        show_tooltip = true
         smart_auto_hide = false
         start = [ "launcher", "wallpaper", "workspaces", "media" ]
         thickness = 34
         widget_spacing = 6
 
             [bar.DeckBar.monitor.DP-1.dead_zone]
+            click_through = false
 
 [battery]
 warning_threshold = 30
 
+[bluetooth]
+connect_when_enabled = false
+connection_notifications = false
+
 [brightness]
-enable_ddcutil = false
+enable_ddcutil = true
 ignore_mmids = []
 minimum_brightness = 0.0
 sync_all_monitors = false
 
 [calendar]
+dedupe_events = false
+dedupe_ignore_patterns = []
 enabled = false
 event_date_format = "%A %e %B"
 event_time_format = "%H:%M"
 refresh_minutes = 15
 
+    [calendar.reminders]
+    all_day_digest_time = "09:00"
+    default_lead_minutes = 10
+    enabled = true
+    use_event_reminders = true
+
 [control_center]
+circular_avatar = true
 hidden_tabs = []
+show_avatar_border = true
 show_session_button = true
 show_shortcut_labels = true
 sidebar = "compact"
@@ -321,8 +368,14 @@ sidebar_section = "none"
 width = 700
 
     [control_center.calendar]
+    hide_past_events = false
+    past_events_threshold_minutes = 30
     show_events_card = true
+    show_events_location = false
     show_week_numbers = false
+
+    [control_center.media]
+    show_visualizer = true
 
     [[control_center.shortcuts]]
     type = "wifi"
@@ -357,8 +410,9 @@ active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
 background_opacity = 0.87999999523162842
-border = "outline"
+border = "outline_variant"
 border_width = 0.0
+compositor_blur = true
 concave_edge_corners = true
 cross_axis_padding = 8
 enabled = false
@@ -376,7 +430,6 @@ magnification_scale = 1.4500000476837158
 main_axis_padding = 16
 margin_edge = 0
 margin_ends = 0
-monitors = []
 pinned = []
 position = "bottom"
 radius = 16
@@ -483,11 +536,15 @@ sunset = ""
 allow_empty_password = false
 blur_intensity = 0.5
 blurred_desktop = false
+edge_smoothness = 0.30000001192092896
 enabled = true
 fingerprint = false
+grace_period_seconds = 0
 lock_before_suspend = true
 monitors = []
 tint_intensity = 0.30000001192092896
+transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt" ]
+transition_duration = 1500.0
 wallpaper = ""
 
 [lockscreen_widgets]
@@ -513,7 +570,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -524,6 +581,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -541,7 +599,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -552,6 +610,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -565,9 +624,13 @@ temperature_night = 4000
 [notification]
 background_opacity = 0.97000002861022949
 border = true
+border_color = "outline_variant"
+border_width = 1.0
 collapse_on_dismiss = true
 enable_daemon = true
+follow_focused_output = false
 history_retention_hours = 5
+keep_dismissed_in_history = true
 layer = "top"
 max_visible = 0
 monitors = []
@@ -577,11 +640,16 @@ position = "top_right"
 scale = 0.89999997615814209
 show_actions = true
 show_app_name = true
+width = 360
 
 [osd]
 background_opacity = 0.97000002861022949
 border = true
+border_color = "outline_variant"
+border_width = 1.0
 enabled = true
+follow_focused_output = false
+hide_delay_ms = 1400
 monitors = []
 offset_x = 20
 offset_y = 8
@@ -594,11 +662,13 @@ scale = 1.0
     bluetooth = true
     brightness = true
     caffeine = true
+    custom = true
     dnd = true
     keyboard_backlight = true
     keyboard_layout = true
     lock_keys = true
     media = true
+    media_volume = true
     nightlight = true
     power_profile = true
     privacy = true
@@ -628,13 +698,13 @@ enabled = []
 
 [shell]
 app_icon_colorize = false
-avatar_path = ""
+avatar_path = "/home/mark/Pictures/icon.png"
 button_borders = true
 card_borders = true
 clipboard_auto_paste = "auto"
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
-clipboard_history_max_entries = 50
+clipboard_history_max_entries = 40
 clipboard_image_action_command = ""
 clipboard_keep_from_closed_apps = true
 corner_radius_scale = 1.0
@@ -645,24 +715,31 @@ font_family = "JetBrainsMono Nerd Font"
 input_borders = true
 launch_apps_as_systemd_services = false
 launch_apps_custom_command = ""
+niri_overview_close_on_launch_enabled = false
 niri_overview_type_to_launch_enabled = false
 offline_mode = false
 password_style = "default"
 polkit_agent = true
 popup_borders = true
 popup_shadows = true
+readline_shortcuts = false
 screen_time_enabled = false
+settings_expand_all_groups = false
 settings_show_advanced = true
 settings_window_translucent = false
 setup_wizard_enabled = true
 shared_gl_context = true
+show_close_buttons = true
 show_location = true
 telemetry_enabled = false
 time_format = "{:%H:%M}"
+umbriel_audio_provider_enabled = false
+umbriel_overview_close_on_launch_enabled = false
+umbriel_overview_type_to_launch_enabled = false
 
     [shell.animation]
     enabled = true
-    speed = 1.5
+    speed = 2.0
 
     [shell.greeter_sync]
     auto_sync = false
@@ -673,21 +750,36 @@ time_format = "{:%H:%M}"
     app_grid = false
     auto_paste = "auto"
     categories = true
+    category_icons_only = false
     compact = false
+    default_view = "recent"
     fetch_exchange_rates = true
+    ignore_mouse = false
+    layout = "full"
     pinned = []
     provider_prefix = "/"
+    search_position = "bottom"
     show_app_actions = false
     show_app_origin_indicator = true
     show_icons = true
+    show_navigation_labels = true
+    show_session_button = true
+    show_settings_button = true
     sort_by_usage = true
+    track_usage = true
+    width = 760
 
         [shell.launcher.dmenu]
+
+        [shell.launcher.panels]
+        ignored = [ "polkit", "setup-wizard", "test", "launcher" ]
 
     [shell.mpris]
     blacklist = []
 
     [shell.panel]
+    border_color = "outline_variant"
+    border_width = 1.0
     borders = true
     clipboard_placement = "floating"
     clipboard_position = "center"
@@ -711,6 +803,7 @@ time_format = "{:%H:%M}"
     transparency_mode = "solid"
     wallpaper_placement = "attached"
     wallpaper_position = "auto"
+    wallpaper_show_names = true
 
     [shell.privacy]
     cam_filter_regex = ""
@@ -722,16 +815,28 @@ time_format = "{:%H:%M}"
     size = 32
 
     [shell.screenshot]
+    annotate = true
+    close_on_copy = true
+    close_on_save = true
     confirm_region = false
+    copy_on_close = false
     copy_to_clipboard = true
     directory = "/home/mark/Pictures/Screenshots"
     filename_pattern = ""
+    format = "png"
     freeze_screen = true
     pipe_command = ""
     pipe_to_command = false
+    quality = 90
+    region_border_width = 2.0
+    region_dim_opacity = 0.64999997615814209
+    region_modifier = "none"
     remember_last_region = false
     save_to_file = true
     show_cursor = false
+    show_region_dimensions = true
+    show_region_hint = true
+    skip_annotate_on_copy_save = false
 
     [shell.session]
     grid = true
@@ -747,6 +852,7 @@ time_format = "{:%H:%M}"
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "5"
         variant = "destructive"
 
@@ -757,6 +863,7 @@ time_format = "{:%H:%M}"
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "4"
         variant = "default"
 
@@ -767,6 +874,7 @@ time_format = "{:%H:%M}"
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "3"
         variant = "default"
 
@@ -777,6 +885,7 @@ time_format = "{:%H:%M}"
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "2"
         variant = "default"
 
@@ -787,6 +896,7 @@ time_format = "{:%H:%M}"
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "1"
         variant = "default"
 
@@ -795,7 +905,13 @@ time_format = "{:%H:%M}"
     direction = "down"
 
     [shell.window_switcher]
+    current_workspace_only = false
     mru = false
+    show_all_outputs = true
+    show_app_icon = true
+    show_caption = true
+    show_count = true
+    style = "carousel"
 
 [storage]
 key_file = ""
@@ -846,10 +962,11 @@ mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
 source = "builtin"
+sync_color_scheme = true
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "kitty", "mango" ]
+    builtin_ids = [ "btop", "kitty" ]
     community_ids = []
     enable_builtin_templates = true
     enable_community_templates = true
@@ -871,6 +988,7 @@ transition_on_startup = false
     enabled = false
     interval_seconds = 1800
     order = "random"
+    pause_on_fullscreen = false
     recursive = true
 
 [weather]

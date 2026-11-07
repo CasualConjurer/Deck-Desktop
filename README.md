@@ -7,6 +7,7 @@ An alternate custom configurated desktop environment for the Steam Deck built wi
 ### Important Notes
 - This installation is for the CachyOS Handheld Edition, meaning there are no immutable drives present, and mostly everything is configurable
 - ***DO NOT*** `git clone` into the `$HOME` directory unless you know what you are doing. Copy the files in their respective folders. (I will provide a Script in the future to automate this process) 
+- Syncing is now handled by an `rclone` bash script. Please be advised of the possible file deletions in your $HOME folder 
 
 ---
 
@@ -47,6 +48,13 @@ Most of the necessary packages are installed on standard CachyOS Handheld, these
 
 Currently, the only install process would be copying everything (except the Readme file) into your `.config` folder, possibly replacing some of the default configs.
 
+- Git clone in a projects directory of your choosing.
+- modify the `dots-bisync.sh` script to check for any errors
+- run `./dots-bisync.sh --resync --dry-run` to check for any errors. Then remove the `--dry-run`, then the `--resync`.
+- You may now automate the syncing to a cron job.
+
+> [!note] Sync Issues
+> Please be advised that i have not tested this yet with individual user configurations. For now, the script will use the latest modified file as a main.
 
 ---
 
@@ -57,6 +65,7 @@ Feel free to message me for any bugs or features you might want, or contribute
 
 - [ ] Keymaps button
 - [ ] Install Script
-
+- [ ] Sync Script
+- [ ] Dots Documentation
 
 
